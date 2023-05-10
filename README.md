@@ -1,3 +1,21 @@
+# Install
+**Build**
+```bash
+git clone https://github.com/YanBC/hwloc
+cd hwloc
+./autogen.sh
+./configure
+make
+```
+
+**Install**
+```bash
+ln -s $(pwd)/utils/lstopo/lstopo ~/.bin/lstopo
+```
+
+Note that `$(pwd)/utils/lstopo/lstopo` is an ASCII shell script that resolves libs dependencies. The actual execuatable is in `$(pwd)/utils/lstopo/.libs/lstopo`
+
+# Original README
 Introduction
 
 The Hardware Locality (hwloc) software project aims at easing the process of
